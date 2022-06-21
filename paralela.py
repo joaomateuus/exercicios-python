@@ -1,7 +1,4 @@
 #Faca um programa que calcule a media do trimestre de um anulo
-nota1 = 0
-nota2 = 0
-paralela = 0
 operador = 1
 while operador != 0:
     print('0-Sair')
@@ -21,11 +18,11 @@ while operador != 0:
                 if(menor_nota == nota1):
                     nota1 = paralela
                     print('A sua primeira nota sera substituida')
-                    print('E sua média é: ', float(nota1+nota2) /2)
+                    print('E sua média parcial é: ', float(nota1+nota2) /2)
                 else:
                     nota2 = paralela
                     print('A sua segunda nota sera substituida')
-                    print('E sua média é: ', float(nota1+nota2) /2)
+                    print('E sua média parcial é: ', float(nota1+nota2) /2)
             else:
                 print('Voce nao passou na parela e suas notas nao serao subsituidas')
                 print('Sua média parcial é: ', float(nota1+nota2) /2)  
