@@ -5,7 +5,7 @@ paralela = 0
 operador = 1
 while operador != 0:
     print('0-Sair')
-    print('1-Calcular media')
+    print('1-Calcular media parcial')
     operador = int(input('Digite uma opcao: '))
     if operador == 1:
         nota1 = float(input('Digite a primeira nota: '))
