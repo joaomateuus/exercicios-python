@@ -10,16 +10,20 @@ while operador != 0:
     if operador == 1:
         nota1 = float(input('Digite a primeira nota: '))
         nota2 = float(input('Digite a segunda nota:  '))
+        if(nota1 > nota2):
+            menor_nota = nota2
+        else:
+            menor_nota = nota1
         if(nota1 < 7 or nota2 < 7 ):
             paralela = float(input('Digite sua nota paraleal:  '))  
-            if(paralela > nota1 or nota2):
+            if(paralela > menor_nota ):
                 print('Voce recuperou sua menor nota com a parelala')
-                if(nota1 < paralela):
-                    paralela = nota1
+                if(menor_nota == nota1):
+                    nota1 = paralela
                     print('A sua primeira nota sera substituida')
                     print('E sua média é: ', float(nota1+nota2) /2)
-                elif(nota2 < paralela):
-                    paralela = nota2
+                else:
+                    nota2 = paralela
                     print('A sua segunda nota sera substituida')
                     print('E sua média é: ', float(nota1+nota2) /2)
             else:
